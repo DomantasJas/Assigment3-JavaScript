@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Duplication</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+    <h1>String Duplication</h1>
+    <div id="app">
+            <p>Message <input v-model="message"></p>
+            <p>How many times? <input v-model="times"> <button class="btn btn-outline-danger"
+                    v-on:click="multiply">Multiply</button>
+                <button class="btn btn-outline-danger" v-on:click="clear">Clear</button>
+            </p>
+            <p v-if="message">Result: <span v-if="newMessage" class="font-weight-bold">{{newMessage}}</span></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
